@@ -6,6 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'CRUDA12';
-  username = 'willito'
+  title = 'calculadora';
+  opA = 0;
+  opB = 0;
+  resultado = 0;
+  sum(){
+    this.resultado = this.opA + this.opB;
+  }
+
 }

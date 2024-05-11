@@ -1,4 +1,40 @@
-<p>Hola mundo sapeee {{username}}</p>
+<p>Hola mundo sapeee {{title}}</p>
 
-<app-user></app-user>
+<div class="container">
+
+    <h1>{{title}}</h1>
+
+   <form action="">
+
+    <div class="form-group">
+        <label for="opA">Valor 1</label>
+        <input 
+        class="form-control" 
+        type="number" 
+        name="opB" 
+        id="opA"
+        placeholder="Escribe un número"
+        [(ngModel)]="opA"
+        >
+        
+        <label for="opB">Valor 2</label>
+        <input 
+        class="form-control" 
+        type="number" 
+        name="opB" 
+        id="opB"
+        placeholder="Escribe un número"
+        [(ngModel)]="opB"
+        >
+
+
+        <button (click)="sum()" type="button" class=" btn btn-primary">Sumar</button>
+        
+    </div>
+   </form>
+
+   <p>Resultado: {{resultado}}</p>
+
+</div>
+
 <!-- <router-outlet></router-outlet> -->
