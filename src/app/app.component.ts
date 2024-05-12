@@ -13,5 +13,11 @@ export class AppComponent {
   sum(){
     this.resultado = this.opA + this.opB;
   }
+  prod(){
+    this.resultado = this.opA * this.opB;
+  }
+  div(){
+    this.resultado = this.opA / this.opB;
+  }
 
 }
